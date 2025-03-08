@@ -1,0 +1,26 @@
+.footer_content_wrapper{
+    background: #e9e9e9;
+    padding: 1.7rem 0;
+    margin-top: 5rem;
+}
+.footer_content_wrapper h3{
+    text-align: center;
+    color: #385e79 !important;
+}
+
+
+@media (max-width: 380px) {
+    .footer_content_wrapper h3{
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media (max-width: 300px) {
+    .footer_content_wrapper h3{
+        width: 80vw;
+        font-size: 1rem;
+        margin: auto;
+    }
+    
+}

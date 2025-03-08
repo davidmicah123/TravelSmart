@@ -1,0 +1,115 @@
+.featured_hotel_section{
+    margin: 2rem 0;
+    margin-top: 4rem;
+    background-color: #e6e6e679;
+    padding: 3rem 0;
+}
+.featured_hotels_wrapper{
+    width: 85vw;
+    margin: auto;
+}
+
+.features_hotel_heading{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.feature_hotel_card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.featured_card_img_wrapper{
+    width: 100%;
+    height: 50vh;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.featured_card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ratings_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.ratings_wrapper > div  {
+    display: flex;
+    align-items: center;
+}
+.ratings_wrapper > div > ion-icon{
+    color: #e0ab36;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 1000px) {
+    .featured_hotels_wrapper{
+        width: 90vw;
+    }
+}
+@media (max-width: 900px) {
+    .featured_hotels_wrapper{
+        width: 95vw;
+    }
+}
+@media (max-width: 850px) {
+    .featured_hotels_wrapper{
+        width: 80vw;
+        margin: 3rem auto;
+    }
+    
+    .feature_hotel_card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem auto;
+        gap: 2.5rem;
+    }
+}
+@media (max-width: 780px) {
+    .featured_hotels_wrapper{
+        width: 85vw;
+    }
+}
+@media (max-width: 750px) {
+    .featured_hotels_wrapper{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .features_hotel_heading{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .feature_hotel_card_wrapper{
+        width: 60vw;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featured_card_img_wrapper{
+        height: 65vh;
+    }
+}
+
+@media (max-width: 560px) {
+    .feature_hotel_card_wrapper{
+        width: 75vw;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .featured_card_img_wrapper{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .featured_card_img_wrapper{
+        height: 47vh;
+    }
+}

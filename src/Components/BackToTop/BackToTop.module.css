@@ -1,0 +1,29 @@
+.back_to_top{
+    background: #385e79;
+    padding: 0.7rem 1rem;
+    color: white;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    width: 3.6rem;
+}
+.back_to_top ion-icon{
+    font-size: 1.5rem;
+}
+
+.back_to_top_icon{
+    background: #385e79;
+    color: white;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+}
+
+
+.back_to_top_icon ion-icon{
+    font-size: 2.1rem;
+}

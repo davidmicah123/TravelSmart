@@ -1,0 +1,124 @@
+.scope_section{
+    margin: 3.5rem 0;
+}
+.scope_content_wrapper{
+    width: 85vw;
+    margin: auto;
+}
+
+.scope_content_wrapper > h3{
+    color: #c99320;
+}
+.scope_content_wrapper > h2{
+    font-size: 2.2rem;
+}
+.scope_Card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 4rem 0;
+}
+.second_feature {
+    justify-content: center;
+}
+
+.scope_card_txt_wrapper{
+    width: 80%;
+}
+.scope_number{
+    font-size: 5.5rem;
+    /* color: #ddd; */
+    color: #e0aa36c7;
+}
+.scope_card_txt_wrapper h3{
+    font-size: 1.7rem;
+}
+.scope_card_txt{
+    line-height: 2.2;
+}
+
+.scope_card_img_wrapper{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.scope_img{
+    width: 80%;
+    height: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 1s all;
+    object-fit: cover;
+}
+.scope_img:hover{
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .scope_content_wrapper{
+        width: 85vw;
+        margin: auto;
+    }
+    
+    .scope_content_wrapper > h3{
+        text-align: center;
+    }
+    .scope_content_wrapper > h2{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+    .scope_Card{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .second_scope{
+        flex-direction: column;
+    }
+    .second_feature{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .second_feature_txt_wrapper{
+        margin: auto;
+        width: 68vw;
+    }
+
+    .scope_Card{
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .scope_Card{
+        width: 90vw;
+    }
+    .scope_content_wrapper{
+        width: 90vw;
+        margin: auto;
+    }
+    .scope_card_txt_wrapper{
+        width: 90vw;
+    }
+    .second_feature_txt_wrapper{
+        margin: auto;
+        width: 90vw;
+    }
+
+    .scope_img{
+        width: 90%;
+        height: 35vh;
+    }
+
+    .second_feature{
+        width: 90vw;
+    }
+}

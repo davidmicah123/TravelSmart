@@ -1,0 +1,139 @@
+.header{
+    text-align: center;
+    color: #385e79;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.destination_display_area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+
+.input_wrapper{
+    width: 65vw;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+}
+.input_wrapper ion-icon{
+    font-size: 1.5rem;
+}
+.search_input{
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+    border: 0;
+}
+
+
+
+
+.destination_card{
+    box-shadow: 0 6px 12px rgb(201, 199, 199);
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.card_img_wrapper{
+    width: 100%;
+    height: 33vh;
+    overflow: hidden;
+}
+.card_img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.card_img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card_content_wrapper{
+    padding: 0.8rem 1rem;
+}
+
+
+
+@media (max-width: 1000px) {
+    .destination_display_area{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 990px) {
+    .destination_display_area{
+        grid-template-columns: repeat(2, 1fr);
+        width: 70vw;
+        gap: 2rem;
+    }
+    .card_img_wrapper{
+        height: 28vh;
+    }
+}
+
+@media (max-width: 840px) {
+    .destination_display_area{
+        width: 80vw;
+        gap: 2rem;
+    }
+    .card_img_wrapper{
+        height: 25vh;
+    }
+}
+
+@media (max-width: 720px) {
+    .destination_display_area{
+        width: 90vw;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .destination_display_area{
+        grid-template-columns: repeat(1, 1fr);
+        width: 57vw;
+    }
+}
+
+@media (max-width: 615px) {
+    .input_wrapper{
+        width: 75vw;
+    }
+}
+
+@media (max-width: 490px) {
+    .header{
+        font-size: 1.6rem;
+    }
+    .destination_display_area{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 430px) {
+    .destination_display_area{
+        width: 70vw;
+    }
+    
+    .card_img_wrapper{
+        height: 22vh;
+    }
+}
+
+@media (max-width: 365px) {
+    .header{
+        font-size: 1.45rem;
+    }
+    .destination_display_area{
+        width: 80vw;
+    }
+}

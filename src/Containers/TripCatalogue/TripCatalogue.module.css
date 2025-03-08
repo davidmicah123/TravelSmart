@@ -1,0 +1,340 @@
+.trip_catalogue_page{
+    overflow: hidden;
+}
+.navbar{
+    background-color: #f0eeee;
+    padding: 1.3rem 1rem;
+    color: #385e79;
+}
+.navbar_content_wrapper{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-right: 3rem;
+}
+.navbar_link{
+    text-decoration: none;
+    color: #385e79 !important;
+}
+.navbar_content_wrapper > h2{
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.navbar_content_wrapper ion-icon{
+    font-size: 2.1rem;
+}
+
+
+
+.trip_catalogue_dashboard{
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+.catalogue_sidebar{
+    background-color: #f3f3f3;
+    padding: 1rem;
+    width: 21vw;
+    margin: 1rem 0;
+    height: 82vh;
+    /* overflow-y: scroll; */
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+/* .catalogue_sidebar::-webkit-scrollbar {
+    height: 0.7rem;
+}
+.catalogue_sidebar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0.7rem;
+} */
+.catalogue_sidebar_list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link ion-icon{
+    font-size: 1.6rem;
+}
+.tour_options{
+    margin-top: 0.7rem;
+}
+.active_list ion-icon{
+    font-size: 1.7rem;
+}
+.catalogue_sidebar_list li{
+    padding-left: 1.2rem;
+    line-height: 2.5;
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.catalogue_sidebar_list li:hover{
+    background: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.active_list{
+    background: white;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+
+.contenient_toogler ul li{
+    padding-left: 1rem;
+    list-style: none;
+    background: red !important;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+/* Tour planner */
+.tour_planner{
+    height: 84.3vh;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+}
+.planner_hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.486)), url(https://aws.wideinfo.org/darbi.org/wp-content/uploads/2017/08/05001921/worldwide-travelling-2-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75vw;
+    height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.destination_card_container{
+    width: 90%;
+    margin: 2rem auto;
+}
+.budget_input_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.budget_box{
+    display: flex;
+    gap: 0.5rem;
+}
+.budget_box > select{
+    padding: 0.3rem 1rem;
+    width: 10vw;
+    outline: none;
+    font-family: inherit;
+}
+.budget_box_input{
+    width: 22vw;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    outline: none;
+}
+.destination_card_container > h3{
+    margin-bottom: 1rem;
+}
+.destination_card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 68vw;
+}
+.destination_card{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+}
+.destination_card_img_wrapper{
+    width: 100%;
+    height: 30vh;
+}
+.destination_img{
+    width: 100%;
+    height: 100%;
+}
+.destination_card_content{
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 1000px) {
+    .trip_catalogue_dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalogue_sidebar{
+        width: 80vw;
+        height: 100%;
+        border-radius: 0.5rem;
+        margin-left: 0;
+    }
+    .catalogue_sidebar_list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tour_planner{
+        width: 90vw;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .planner_hero{
+        width: 90vw;
+        height: 30vh;
+    }
+    .destination_card_container{
+        margin: 1rem;
+    }
+    .destination_card_wrapper{
+        width: 85vw;
+    }
+
+    .trip_catalogue_page{
+        overflow-Y: scroll;
+    }
+}
+
+
+
+@media (max-width: 830px) {
+    .destination_card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .destination_card_container{
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .catalogue_sidebar{
+        width: 90vw;
+    }
+    .budget_input_wrapper{
+        justify-content: center;
+    }
+    .budget_box{
+        width: 50vw;
+    }
+    
+    .budget_box > select{
+        padding: 0.3rem 1rem;
+        width: 35%;
+        outline: none;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 0.5rem;
+        font-family: inherit;
+    }
+    .budget_box_input{
+        width: 65%;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .catalogue_sidebar{
+        width: 90vw;
+    }
+    .destination_card_img_wrapper{
+        height: 25vh;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .catalogue_sidebar_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .planner_hero{
+        height: 25vh;
+        font-size: 1.2rem;
+    }
+
+    .destination_card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        width: 60vw;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .catalogue_sidebar{
+        width: 80vw;
+    }
+    .catalogue_sidebar_list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .tour_planner h2{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .budget_box{
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+    .destination_card_wrapper{
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .destination_card_img_wrapper{
+        height: 20vh;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .destination_card_wrapper{
+        width: 85vw;
+    }
+    .catalogue_sidebar{
+        width: 90vw;
+        margin-left: 0;
+    }
+    .planner_hero{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .destination_card_wrapper{
+        width: 90vw;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .navbar_content_wrapper{
+        padding-right: 0;
+    }
+}

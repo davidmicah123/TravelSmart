@@ -1,0 +1,306 @@
+.header{
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1.9rem;
+    color: #385e79;
+}
+
+.dashboard_control_area{
+    margin: 1rem 0;
+}
+.input_wrapper{
+    width: 65vw;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.input_wrapper ion-icon{
+    font-size: 1.5rem;
+}
+.search_input{
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+    border: 0;
+}
+
+
+
+/* continent_card */
+.continent_card_Wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    margin: 2rem auto;
+    gap: 1.5rem;
+}
+.continent_card{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgb(224, 224, 224);
+    cursor: pointer;
+}
+.continent_card_img_wrapper{
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+.continent_card_img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.continent_card_img:hover{
+    transform: scale(1.11);
+}
+.continent_card_content{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.transport_dashboard {
+    padding: 20px;
+}
+
+.transport_dashboard .header {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1.9rem;
+    color: #385e79;
+}
+
+.transport_dashboard .selected_continent {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.transport_dashboard .dashboard_control_area {
+    margin: 1rem 0;
+}
+
+.transport_dashboard .input_wrapper {
+    width: 65vw;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.transport_dashboard .input_wrapper ion-icon {
+    font-size: 1.5rem;
+}
+
+.transport_dashboard .search_input {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+    border: 0;
+}
+
+/* continent_card */
+.transport_dashboard .continent_card_Wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    margin: 2rem auto;
+    gap: 1.5rem;
+}
+
+.transport_dashboard .continent_card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+.transport_dashboard .continent_card_img_wrapper {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.transport_dashboard .continent_card_img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.transport_dashboard .continent_card_img:hover {
+    transform: scale(1.11);
+}
+
+.transport_dashboard .continent_card_content {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Transport Options Styling */
+.transport_dashboard .transport_options {
+    margin-top: 20px;
+}
+
+.transport_dashboard .transport_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.transport_dashboard .transport_card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.transport_dashboard .transport_card:hover {
+    transform: scale(1.03);
+}
+
+.transport_dashboard .transport_card h4 {
+    margin-bottom: 10px;
+}
+
+.transport_dashboard .transport_card p {
+    margin: 5px 0;
+}
+
+
+
+.transport_cards{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    width: 80vw;
+    margin: auto;
+}
+
+
+
+
+
+@media (max-width: 990px) {
+    .continent_card_Wrapper{
+        width: 90vw !important;
+    }
+    .continent_card_img_wrapper{
+        height: 25vh !important;
+    }
+}
+
+@media (max-width: 870px) {
+    .continent_card_Wrapper{
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 70vw !important;
+        gap: 2rem !important;
+    }
+    .continent_card_img_wrapper{
+        height: 20vh !important;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .continent_card_Wrapper{
+        width: 85vw !important;
+    }
+    .continent_card_img_wrapper{
+        height: 18vh !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .continent_card_Wrapper{
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 60vw !important;
+    }
+    .continent_card_img_wrapper{
+        height: 18vh !important;
+    }
+    .input_wrapper{
+        width: 90vw !important;
+    }
+}
+
+
+@media (max-width: 395px) {
+    .continent_card_Wrapper{
+        width: 70vw !important;
+    }
+    .transport_dashboard .header {
+        font-size: 1.3rem !important;
+        margin: 1rem 0 !important;
+    }
+}
+
+
+
+@media (max-width: 940px) {
+    .transport_cards{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .transport_cards{
+        width: 90vw !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .transport_cards{
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 60vw !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .transport_cards{
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 80vw !important;
+    }
+
+    .selected_continent{
+        font-size: 1.5rem !important;
+    }
+}
+
+
+
+@media (max-width: 650px) {
+    .selected_continent{
+        font-size: 1.3rem !important;
+    }
+    .header{
+        font-size: 1.4rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .selected_continent{
+        font-size: 1.2rem !important;
+    }
+}

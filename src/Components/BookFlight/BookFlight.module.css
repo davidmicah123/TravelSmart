@@ -1,0 +1,90 @@
+.flight_bookings_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3rem 0;
+    margin-top: 4rem;
+}
+
+.flight_bookings_section h2{
+    color: #385e79;
+    margin-bottom: 1rem;
+}
+.logos_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80vw;
+    gap: 1rem;
+}
+
+
+.logo_img_wrapper{
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_img_wrapper img{
+    transform: scale(0.8);
+}
+.emerates_logo_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emerates_logo_wrapper img{
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media (max-width: 920px) {
+    .logos_wrapper{
+        width: 90vw;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .logos_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flight_bookings_section h2{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .logos_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80vw;
+        gap: 0;
+    }
+    .logo_img_wrapper img{
+        transform: scale(0.5);
+    }
+}
+
+
+@media (max-width: 430px) {
+    .logos_wrapper{
+        width: 90vw;
+    }
+    .flight_bookings_section h2{
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+}

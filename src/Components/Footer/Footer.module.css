@@ -1,0 +1,127 @@
+.footer{
+    background: #1d1d1d;
+    color: white;
+
+    margin-top: 3rem;
+}
+.footer ion-icon{
+    font-size: 1.3rem;
+}
+.footer_content_wrapper{
+    width: 85vw;
+    margin: auto;
+    padding: 4.5rem 0;
+    padding-bottom: 2rem;
+}
+.footer_top{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_main{
+    width: 35%;
+}
+.footer_main p{
+    line-height: 2;
+}
+
+.footer_list{
+    list-style: none;
+    line-height: 2.2;
+}
+.footer_list_item{
+    cursor: pointer;
+}
+.footer_list_item:first-child{
+    font-weight: bold;
+}
+.footer_link{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_line{
+    border: 0.001rem solid white;
+}
+
+.footer_bottom{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footer_bottom_contnet_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_icons_wrapper{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.back_to_top_wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 940px) {
+    .footer_top li:nth-child(3){
+        display: none;
+    }
+    .footer_main > p{
+        line-height: 1.5;
+        font-size: 0.9rem;
+    }
+    .first_hide{
+        display: none;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .footer{
+        text-align: center;
+
+    }
+    .footer_content_wrapper{
+        width: 80vw;
+    }
+    .footer_top{
+        flex-direction: column;
+    }
+    .footer_main{
+        width: 100%;
+    }
+
+    .footer_list{
+        margin-top: 1.5rem;
+    }
+    .footer_bottom_contnet_wrapper{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .footer_icons_wrapper{
+        justify-content: space-between;
+        width: 50%;
+        margin: 2rem auto;
+        margin-bottom: 1rem;
+    }
+    .footer_icons_wrapper ion-icon{
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .footer_icons_wrapper{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 445px) {
+    .footer_content_wrapper{
+        width: 90vw;
+    }
+}
+
